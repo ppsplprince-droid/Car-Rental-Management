@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<nav class="nav">
+    <a href="/dashboard" class="logo">🏎 Car Rental</a>
+    <div class="menu">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/cars">Cars</a>
+    </div>
+</nav>
+
+<main class="container">
+    <h1 style="text-align:center; margin-bottom: 20px;">Booking Confirmed ✅</h1>
+
+    <div class="confirm-box" th:if="${car}">
+        <img th:src="${car.imageUrl}" alt="Car Image"/>
+
+        <h2 th:text="${car.brand} + ' ' + ${car.model}">Car Name</h2>
+        <p>Booked by: <span th:text="${name}"></span></p>
+        <p>Number of Days: <span th:text="${days}"></span></p>
+        <p><strong>Total Price: $<span th:text="${totalPrice}"></span></strong></p>
+
+        <br/>
+        <a href="/dashboard">
+            <button>Return to Dashboard</button>
+        </a>
+    </div>
+</main>
+</body>
+</html>

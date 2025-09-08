@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<nav class="nav">
+    <a href="/dashboard" class="logo">🏎 Car Rental</a>
+    <div class="menu">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/cars">Cars</a>
+    </div>
+</nav>
+
+<main class="container">
+    <section class="hero">
+        <h1>Welcome to Car Rental</h1>
+        <p>Choose from the most exotic supercars and experience the thrill of driving.</p>
+        <a href="/cars"><button class="cta">Browse Cars</button></a>
+    </section>
+
+    <h2 class="section-title">Popular Cars</h2>
+    <div class="cars-grid">
+        <div class="car-card">
+            <img src="https://example.com/ferrari.jpg" alt="Ferrari 488 Spider"/>
+            <h3>Ferrari 488 Spider</h3>
+            <p>$2,500.00 / day</p>
+        </div>
+
+        <div class="car-card">
+            <img src="https://example.com/lamborghini.jpg" alt="Lamborghini Huracán EVO"/>
+            <h3>Lamborghini Huracán EVO</h3>
+            <p>$3,000.00 / day</p>
+        </div>
+
+        <div class="car-card">
+            <img src="https://example.com/bugatti.jpg" alt="Bugatti Chiron"/>
+            <h3>Bugatti Chiron</h3>
+            <p>$8,000.00 / day</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
